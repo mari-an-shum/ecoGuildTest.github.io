@@ -1,0 +1,155 @@
+.descr
+    margin-bottom: 120px
+    &-img
+        border-radius: 8px
+        width: 280px
+        overflow: hidden
+        display: flex
+        justify-content: center
+        float: left
+        margin-right: 30px
+    &-text
+        &__title
+        font-size: 38px
+        font-weight: bold
+        margin-bottom: 30px
+.sub
+    margin-bottom: 120px
+.guys
+    margin-bottom: 120px
+    &-img
+        display: flex
+        flex-direction: column
+        margin-bottom: 30px
+        &s
+            display: inline-flex
+            justify-content: space-around
+            flex-wrap: wrap
+            width: 100%
+            height: 790px
+            overflow: hidden
+            transition: all 0.6s ease
+            margin-bottom: 40px
+        &__img
+            height: 300px
+            width: 255px
+            border-radius: 11px
+            overflow: hidden
+            margin-bottom: 14px
+            & img
+                width: 100%
+        &__name
+            display: block
+            text-align: center
+            font-weight: bold
+            font-size: 21px
+        &__role
+            display: block
+            text-align: center
+            font-size: 21px
+.vacanc
+    &y
+        &-title
+            font-weight: bold
+            font-size: 24px
+            margin-bottom: 30px
+        &-tasks
+            color: #003B1F
+            font-weight: 600
+            font-size: 20px
+    &ies
+        margin-bottom: 120px
+        &-link
+            width: 224px
+            margin-top: 40px
+            &s
+                display: inline-flex
+                margin-top: 40px
+            &-o
+                font-size: 18px
+                font-weight: bold
+                transition: all 0.8s ease
+                color: #003B1F
+                text-decoration: underline
+                margin-left: 40px
+                &:hover
+                    color: #6DC6BD
+
+@media (max-width: 991px)
+    .descr
+        &-text
+            &__title
+                font-size: 28px
+                margin-bottom: 20px
+    .sub
+        margin-bottom: 100px
+    .guys
+        margin-bottom: 100px
+        &-img
+            &s
+                height: 650px
+                margin-bottom: 30px
+            &__img
+                width: 206px
+                height: 244px
+            &__name, &__role
+                font-size: 16px
+    .vacanc
+        &y
+            &-title
+                font-size: 20px
+                margin-bottom: 20px
+            &-tasks
+                font-size: 16px
+            &-links
+                margin-top: 40px
+        &ies
+            margin-bottom: 100px
+            &-link-o
+                width: 188px
+                margin-top: 40px
+                font-size: 14px
+#wishing
+    padding-bottom: 40px
+@media (max-width: 576px)
+    .descr
+        display: flex
+        flex-direction: column
+        align-items: center
+        &-img
+            float: none
+            margin-bottom: 20px
+            margin-right: auto
+            margin-left: auto
+        &-text
+            &__title
+                font-size: 22px
+                margin-bottom: 14px
+    .sub
+        margin-bottom: 80px
+    .guys
+        margin-bottom: 80px
+        &-img
+            margin-bottom: 20px
+            &s
+                height: 653px
+            &__name, &__role
+                font-size: 14px
+    .vacanc
+        &y
+            &-title
+                font-size: 18px
+                margin-bottom: 20px
+            &-tasks
+                font-size: 14px
+        &ies
+            margin-bottom: 80px
+            &-link-o
+                font-size: 12px
+                display: block
+@media (max-width: 436px)
+    .guys
+        &-img
+            &__img
+                width: 130px
+                height: 155px

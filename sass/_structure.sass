@@ -1,0 +1,68 @@
+.structure
+    margin-bottom: 120px
+    &-item
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 30px
+        &s
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            margin-right: auto
+            margin-left: auto
+        &__img
+            height: 255px
+            width: 255px
+            background-color: #fff
+            border-radius: 11px
+            margin-bottom: 20px
+        &__title
+            color: #003B1F
+            font-size: 24px
+            text-align: center
+            font-weight: bold
+.history
+    margin-bottom: 120px
+    &-button
+        display: block
+        margin-right: auto
+        margin-left: auto
+        margin-top: 40px
+        width: 193px
+@media  ( max-width: 1199px )
+    .structure
+        &-item
+            &__img
+                height: 206px
+                width: 206px
+            &__title
+                font-size: 20px
+@media ( max-width: 991px )
+    .structure
+        margin-bottom: 100px
+        &-item
+            &s
+                grid-template-columns: repeat(3, 1fr)
+    .history
+        margin-bottom: 100px
+        &-button
+            width: 164px
+@media ( max-width: 767px )
+    .structure
+        &-item
+            &s
+                grid-template-columns: repeat(2, 1fr)
+@media (max-width: 575px)
+    .structure
+        margin-bottom: 80px
+        &-item
+            &__img
+                height: 130px
+                width: 130px
+            &__title
+                font-size: 16px
+    .history
+        margin-bottom: 80px
+        &-button
+            width: 150px
+    

@@ -1,0 +1,56 @@
+body
+    background: #F2EFE4
+    font-family: 'Open sans', sans-serif
+
+::-webkit-scrollbar
+    width: 0px
+    background: transparent
+
+html 
+    -ms-overflow-style: none
+    scrollbar-width: none
+
+@import _colors.sass
+@import _structure.sass
+@import _single-structure.sass
+@import _coworking.sass
+@import _header.sass
+@import _text-styles.sass
+@import _servant-classes.sass
+
+
+
+
+.footer-network
+    background: #036F64
+    /*temporary*/
+    height: 200px
+    width: 100%
+    padding-top: 30px
+    padding-left: 50px
+    /*temporary*/
+    &__hover
+        height: 100px
+        width: 100px
+        border-radius: 50px
+        background: #F2EFE4
+        display: flex
+        align-items: center
+        justify-content: center
+        color: #036F64
+        font-weight: 600
+        transition: all 0.3s ease
+        &:hover
+            color: #F2EFE4
+            font-size: 3px
+            height: 50px
+            width: 50px
+            margin-top: 25px
+            margin-left: 25px
+            transition: all 0.3s ease
+    &__img
+        position: absolute
+        height: 50px
+        width: 50px
+        border-radius: 50px
+

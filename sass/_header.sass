@@ -1,0 +1,65 @@
+.header
+    height: 70px
+    background: #91BE44
+    font-weight: 600
+    display: flex
+    align-items: center
+    &-nav
+        &__items
+            list-style: none
+            display: flex
+            justify-content: space-between
+        &__items li a
+            font-size: 16px
+            color: #F2EFE4
+        &__img
+            position: absolute
+            top: -27px
+            &-div
+                position: relative
+                display: flex
+                justify-content: center
+    &-search
+        position: relative
+        height: 26px
+        width: 26px
+        background: #000
+        z-index: 7
+        &__form
+            position: absolute
+            right: 0
+            outline: none
+            &-input
+                height: 0px
+                width: 0px
+                position: absolute
+                top: -20px
+                right: 0
+                border: none
+                outline: none
+                border-radius: 6px
+                background: #F2EFE4
+                padding-left: 10px
+                opacity: 0
+                transition: 0.8s ease
+                &:focus
+                    outline: none
+            &-submit
+                position: absolute
+                right: 0
+                height: 26px
+                width: 26px
+                z-index: 3
+@media (max-width: 1199px)
+    .header
+        &-nav
+            &__items li a
+                font-size: 14px
+@media (max-width: 991px)
+    .header
+        &-nav
+            &__items li a
+                display: none
+        &-search
+            margin-right: 0
+            margin-left: auto

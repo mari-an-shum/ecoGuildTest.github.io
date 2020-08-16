@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+span, p, h1, h2, h3, small, li
+    line-height: 130%
+    color: $dark-color
+
+a
+    text-decoration: none
+
+.section-title
+    font-size: 38px
+    font-weight: bold
+    margin: 60px 0
+    text-align: center
+.reading-text
+    font-weight: normal
+    font-family: PT Serif
+    font-size: 20px
+    margin-bottom: 14px
+.regular-text
+    font-weight: normal
+    font-size: 20px
+    margin-bottom: 10px
+.path
+    margin-top: 60px
+    margin-left: 4%
+    font-size: 18px
+    color: rgba(0, 59, 31, 0.7)
+    margin-bottom: 33px
+.clickable-link
+    font-size: 20px
+    line-height: 27px
+    text-decoration: none
+    transition: text-decoration 0.8s ease
+    vertical-align: middle
+    &:hover
+        text-decoration: underline
+        transition: text-decoration 0.8s ease
+.button
+    height: 61px
+    border-radius: 34px
+    color: $milk
+    font-weight: bold
+    font-size: 18px
+    box-shadow: inset 0 -30px 105px #24A903 
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    border: none
+    outline: none
+    transition: all 0.8s ease
+    &:hover
+        border: 1px solid #24A903 
+        box-shadow: none
+        color: #24A903
+        transition: all 0.8s ease
+@media (max-width: 991px)
+    .section-title
+        font-size: 28px
+        margin: 50px 0
+    .reading-text, .regular-text
+        font-size: 16px
+        margin-bottom: 10px
+    .clickable-link
+        font-size: 16px
+    .button
+        height: 51px
+        font-size: 14px
+    .path
+        margin-top: 50px
+        font-size: 14px
+@media (max-width: 576px)
+    .section-title
+        font-size: 22px
+        margin: 40px 0
+    .reading-text, .regular-text
+        font-size: 14px
+    .clickable-link
+        font-size: 14px
+    .button
+        height: 41px
+        font-size: 12px
+    .path
+        margin-top: 40px
+        font-size: 12px
